@@ -35,8 +35,16 @@ const power = function(numb1, numb2) {
   return power
 };
 
-const factorial = function() {
-	
+const factorial = function(numb) {
+  for (i = numb; i > 0 ; i--){
+    i != 1 ? (numb = numb * (i-1)) : null ;
+  }
+  if (numb !=0){
+    return numb
+  }else{
+    return 1
+  }
+  
 };
 
 // Do not edit below this line
