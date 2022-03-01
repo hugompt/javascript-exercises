@@ -1,9 +1,14 @@
 const fibonacci = function(fiboNum) {
     let counter = 0;
-    for (i = 1; i <= fiboNum; i++){
-        console.log(counter + " 1");
-        counter += counter + (i-1); 
-        console.log(counter + " 2");
+    let n1 = 0;
+    let n2 = 1 ;
+    for (i = 0; i < fiboNum; i++){
+        if (fiboNum === 1){
+            return fiboNum;
+        }else{
+            counter += n1 + n2; 
+            console.log(counter + " " + i);
+        }
     }
     return counter;
 };
